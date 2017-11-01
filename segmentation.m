@@ -1,7 +1,7 @@
 % This Matlab code performs segmentation of a 3D cell volume along the line of
 % mitotic cell division and determines ratio of intensity of Synemin and Vimentin
-% proteins in the right and left daughter cell, expressed as percentage of the whole. This helps us determine if
-% the proteins are equally divided in the left and right daughter cell
+% proteins separately in the right and left daughter cell, expressed as percentage of the whole. This helps us determine if
+% the respective proteins are equally divided in the left and right daughter cell
 %
 % Ananya Dutta
 
@@ -9,7 +9,7 @@ clear all;
 close all; 
 clc;
 
-for n = 1:100% reading the 3D image which is stored in tif format
+for n = 1:100 % reading the 3D image which is stored in tif format
     
    if n<10
         
