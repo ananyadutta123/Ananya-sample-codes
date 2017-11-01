@@ -1,15 +1,16 @@
-/*This code creates a .exe application consiting of LEDs flickering at different frequencies of 5Hz, 7Hz, 9Hz, 11Hz, 13Hz, 23Hz, which will create Electroencephalography signal of similar frequency in the brain*/
+//This code creates a .exe application consiting of LEDs flickering at different frequencies of 5Hz, 7Hz, 9Hz, 11Hz, 13Hz, 23Hz, 
+//which will create Electroencephalography signal of similar frequency in the brain
 //
 //Ananya Dutta
 
-#include <windows.h>
+#include <windows.h>/* including required libraries*/
 #include <iostream>
 #include <conio.h>
 #include <objidl.h>
 #include <gdiplus.h>
 using namespace Gdiplus;
 #include <algorithm>
-#pragma comment (lib,"Gdiplus.lib")
+#pragma comment (lib,"Gdiplus.lib")/*including the Graphics library*/
 VOID OnPaint(HDC hdc)
 { 
 Graphics graphics(hdc);
@@ -18,8 +19,8 @@ Graphics graphics(hdc);
 Font        font(&fontFamily, 24, FontStyleRegular, UnitPixel);
 PointF      pointF1(75.0f, 100.0f);
 SolidBrush  solidBrush01(Color(255, 255, 255, 255));
-graphics.DrawString(L"5Hz", -1, &font, pointF1, &solidBrush01);
-PointF      pointF2(225.0f, 100.0f);
+graphics.DrawString(L"5Hz", -1, &font, pointF1, &solidBrush01/*Printing the LED frequencies on the application window at different locations*/
+PointF      pointF2(225.0f, 100.0f);/*different locations*/
 graphics.DrawString(L"7Hz", -1, &font, pointF2, &solidBrush01);
 PointF      pointF3(375.0f, 100.0f);
 graphics.DrawString(L"9Hz", -1, &font, pointF3, &solidBrush01);
@@ -37,21 +38,21 @@ Sleep(10000);/*creating a delay of 10 seconds*/
 SolidBrush solidBrush17(Color(255, 255, 255, 255));/* color white of LED*/
 	graphics.FillEllipse(&solidBrush17, 30, 30, 30, 30);/* creating small LEDs in the LED grid at different locations*/
 SolidBrush solidBrush18(Color(255, 255, 255, 255));
-	graphics.FillEllipse(&solidBrush18, 60, 30, 30, 30);
+	graphics.FillEllipse(&solidBrush18, 60, 30, 30, 30);/* creating small LEDs in the LED grid at different locations*/
 SolidBrush solidBrush19(Color(255, 255, 255, 255));
-	graphics.FillEllipse(&solidBrush19, 90, 30, 30, 30);
+	graphics.FillEllipse(&solidBrush19, 90, 30, 30, 30);/* creating small LEDs in the LED grid at different locations*/
 SolidBrush solidBrush112(Color(255, 255, 255, 255));
-	graphics.FillEllipse(&solidBrush112, 30,60, 30, 30);
+	graphics.FillEllipse(&solidBrush112, 30,60, 30, 30);/* creating small LEDs in the LED grid at different locations*/
 SolidBrush solidBrush113(Color(255, 255, 255, 255));
-	graphics.FillEllipse(&solidBrush113, 60, 60, 30, 30);
+	graphics.FillEllipse(&solidBrush113, 60, 60, 30, 30);/* creating small LEDs in the LED grid at different locations*/
 SolidBrush solidBrush114(Color(255, 255, 255, 255));
-	graphics.FillEllipse(&solidBrush114, 90, 60, 30, 30);
+	graphics.FillEllipse(&solidBrush114, 90, 60, 30, 30);/* creating small LEDs in the LED grid at different locations*/
 SolidBrush solidBrush117(Color(255, 255, 255, 255));
-	graphics.FillEllipse(&solidBrush117, 30, 90, 30, 30);
+	graphics.FillEllipse(&solidBrush117, 30, 90, 30, 30);/* creating small LEDs in the LED grid at different locations*/
 SolidBrush solidBrush118(Color(255, 255, 255, 255));
-	graphics.FillEllipse(&solidBrush118, 60, 90, 30, 30);
+	graphics.FillEllipse(&solidBrush118, 60, 90, 30, 30);/* creating small LEDs in the LED grid at different locations*/
 SolidBrush solidBrush119(Color(255, 255, 255, 255));
-	graphics.FillEllipse(&solidBrush119, 90, 90, 30, 30);
+	graphics.FillEllipse(&solidBrush119, 90, 90, 30, 30);/* total of 9 LEDs in the grid*/
 }
 Sleep(100);/* making LED blink at required frequency 
 //Part 1 done 
