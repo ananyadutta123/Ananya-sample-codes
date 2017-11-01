@@ -1,6 +1,7 @@
 /* This code outputs if a string is a palindrome or not */
 /* A palindrome is a string that is read the same in both directions*/
 /* Ananya Dutta*/
+
 #include<iostream.h>
 #include<conio.h>
 #include<stdio.h>
