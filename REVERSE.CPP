@@ -15,7 +15,7 @@ void main()
 	}
 	cout<<"\narray reverse\n";
 	for(j=i-1;j>=0;--j)
-	cout<<a[j]<<"\t";/*outputting reversed array*/
+	cout<<a[j]<<"\t";/*outputing reversed array*/
 	j=n;
 	for (i=0;i<n/2;i++)
 	{
@@ -25,7 +25,7 @@ void main()
 	j--;
 	}
 	for(i=0;i<n;i++)
-	cout<<a[i]<<"\t";/*outputting reversed array*/
+	cout<<a[i]<<"\t";/*outputing reversed array*/
 
 
 
